@@ -1,4 +1,4 @@
-#! /usr/bin/python  
+#! /usr/bin/python3
 # -*- coding: utf-8 -*-
 """ 
 This is a simple Hello World example from the 
@@ -8,10 +8,10 @@ The Tkinter module (“Tk interface”) is the standard Python
 interface to the Tk GUI toolkit 
 """
 # from Tkinter import * provided in the example but the following is better
-from Tkinter import Button, Tk, Frame
+from tkinter import Button, Tk, Frame
 class Application(Frame):
     def say_hi(self):
-        print "hi there, everyone!"
+        print ("hi there, everyone!")
 
     def createWidgets(self):
         self.QUIT = Button(self)
