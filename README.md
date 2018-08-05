@@ -1,0 +1,2 @@
+# My RPi touchscreen python programs
+This is my project to develop a central heating controller based on a Raspberry Pi with a separate 32 GPIO card and a small touch screen. This  is only at an early stage at present but more detail will be added following some initial feasibility trials.  Until then this repo is little more than my off-site project back-up and a way of transferring files between the target RPi and the laptop I use for program development.
