@@ -21,15 +21,15 @@ ttk.Label(win, text="").grid(column=0, row=1)
 ttk.Label(win, text="").grid(column=0, row=3)
 ttk.Label(win, text="").grid(column=0, row=5)
 
-# Modified Button Click Functions
+# Button Click Functions
 def clickOn():
-    bus.write_byte_data(0x20,0x12,0x01)
-def clickOff():
     bus.write_byte_data(0x20,0x12,0x00)
+def clickOff():
+    bus.write_byte_data(0x20,0x12,0x01)
 
 # Adding a Button
 action1 = ttk.Button(win, text="Click on", command=clickOn)
-# Position Button in second row,  column 2 (zero-based)
+# Position Button in second row (zero-based)
 action1.grid(column=0, row=2)
 # Adding a Button
 action2 = ttk.Button(win, text="Click off", command=clickOff)
